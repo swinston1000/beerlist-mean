@@ -5,7 +5,6 @@ var bodyParser = require('body-parser');
 mongoose.connect('mongodb://localhost/beers');
 
 var Beer = require("./models/BeerModel");
-var Review = require("./models/ReviewModel");
 
 var app = express();
 
