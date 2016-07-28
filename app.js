@@ -31,18 +31,6 @@ app.post('/beers', function (req, res, next) {
   });
 });
 
-app.put('/beers/:id',  function(req, res, next) {
-  Beer.findById(req.params.id, function (error, beer) {
-    beer.name = req.body.name;
-
-    beer.save(function(err, beer) {
-      if (err) { return next(err); } 
-
-      res.json(beer);
-    });
-  });
-});
-
 app.delete('/beers/:id', function (req, res) {
   Beer.findById(req.params.id, function (error, beer) {
     if (error) {
