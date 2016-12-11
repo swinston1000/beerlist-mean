@@ -4,8 +4,7 @@ var bodyParser = require('body-parser');
 
 mongoose.connect('mongodb://localhost/beers');
 
-var Beer = require("./models/BeerModel");
-var Review = require("./models/ReviewModel");
+var Beer = require("./BeerModel");
 
 var app = express();
 
@@ -28,19 +27,6 @@ app.post('/beers', function (req, res, next) {
     if (err) { return next(err); }
 
     res.json(beer);
-  });
-});
-
-app.delete('/beers/:id', function (req, res) {
-  Beer.findById(req.params.id, function (error, beer) {
-    if (error) {
-      res.status(500);
-      res.send(error);
-    } else {
-      beer.remove();
-      res.status(204);
-      res.end();
-    }
   });
 });
 
