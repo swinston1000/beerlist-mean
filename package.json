@@ -1,26 +1,29 @@
 {
-  "name": "beerlist-server",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.0",
-    "bootstrap": "^3.3.6",
-    "ejs": "^2.4.1",
-    "express": "^4.13.4",
-    "mongoose": "^4.4.12"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Elevationacademy/beerlist-mean.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Elevationacademy/beerlist-mean/issues"
-  },
-  "homepage": "https://github.com/Elevationacademy/beerlist-mean#readme",
-  "description": ""
+    "name": "beerlist-server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "angular": "^1.6.0",
+        "angular-ui-router": "^0.3.2",
+        "body-parser": "^1.15.0",
+        "bootstrap": "^3.3.6",
+        "ejs": "^2.4.1",
+        "express": "^4.13.4",
+        "font-awesome": "^4.7.0",
+        "mongoose": "^4.4.12"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Elevationacademy/beerlist-mean.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Elevationacademy/beerlist-mean/issues"
+    },
+    "homepage": "https://github.com/Elevationacademy/beerlist-mean#readme",
+    "description": ""
 }

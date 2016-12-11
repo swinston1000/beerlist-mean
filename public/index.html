@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nested Beers</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet"></link>
+</head>
+
+<body ng-app="myApp">
+    <h1> My Beers </h1>
+    <ui-view></ui-view>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="/controllers/main.controller.js"></script>
+    <script src="/controllers/beer.controller.js"></script>
+    <script src="/services/beer.service.js"></script>
+    <script src="/services/http.service.js"></script>
+</body>
+
+</html>
