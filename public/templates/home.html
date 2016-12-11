@@ -1,0 +1,28 @@
+<form>
+    <h3>Add a new beer</h3>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Beer Name" ng-model="mainCtrl.beer.name" required></input>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Style" ng-model="mainCtrl.beer.style" required></input>
+    </div>
+    <div class="form-group">
+        <input type="number" class="form-control" placeholder="ABV" ng-model="mainCtrl.beer.abv" required></input>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="Image URL" ng-model="mainCtrl.beer.image_url" required></input>
+    </div>
+    <a type="button" class="btn btn-primary" ng-click="mainCtrl.addBeer()">Add</a>
+</form>
+<div ng-repeat="beer in mainCtrl.beers.items">
+    <div class="beer">
+        <div class="img-container">
+            <img ng-src={{beer.image_url}} />
+        </div>
+        <div class="content-container">
+            <a class="beer-name" ui-sref="beers({id: beer._id})">{{beer.name}}</a>
+            <p>{{beer.style}} - {{beer.abv}}% ABV</p>
+        </div>
+        <i ng-click="mainCtrl.removeBeer(beer)" class="fa fa-times remove"></i>
+    </div>
+</div>
